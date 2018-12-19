@@ -1,13 +1,50 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
   font-size: 20px;
   line-height: 1.3;
 }
-
 
 a {
   color:#00C3E1;
   text-decoration: none;
   font-weight: 600;
+}
+
+.Hero {
+  /* background: url('../images/hero_image.jpg');
+ */
+  background-color: #F0F5FA;
+  height: 920px;
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroGroup {
+  margin: 0 auto 0 auto;
+  max-width: 500px;
+  padding: 150px 50px;
+  text-align: left
+}
+
+.Hero h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #003854;
+}
+
+.Hero p {
+  color: #003854;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.Hero a {
+  font-size: 18px;
+  background-color: #00C3E1;
+  color: #F0F5FA;
+  padding: 16px 24px;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
