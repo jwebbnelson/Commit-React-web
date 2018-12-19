@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Commit App',
+    title: 'Commit - Habit App',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

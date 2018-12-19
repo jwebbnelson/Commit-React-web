@@ -5,9 +5,9 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Commit to new habits today!</h1>
+    <p>The Commit App helps you commit to new habits not just track them.</p>
+    <p>We’re not the first habit app,<br></br> We’re the best!</p>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
