@@ -13,8 +13,6 @@ a {
 }
 
 .Hero {
-  /* background: url('../images/hero_image.jpg');
- */
   background-color: #F0F5FA;
   height: 920px;
   background-size: cover;
@@ -28,25 +26,66 @@ a {
   text-align: left
 }
 
+.HeroContainer {
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.HeroImage {
+  margin: 0;
+  padding: 140px;
+}
+
+.HeroImage img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.8s;
+  opacity: 0;
+  animation: HeroAnimation 2.5s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeroImage img:hover {
+  box-shadow: 0 15px 70px rgba(0, 0, 0, 0.1);
+}
+
 .Hero h1 {
   font-size: 60px;
   line-height: 1.2;
   color: #003854;
+  opacity: 0;
+  animation: HeroAnimation 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
   color: #003854;
+  opacity: 0;
   font-size: 30px;
   line-height: 1.5;
+  animation: HeroAnimation 2s 0.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a {
   font-size: 18px;
   background-color: #00C3E1;
   color: #F0F5FA;
+  font-weight: 700;
+  opacity: 0;
   padding: 16px 24px;
   border-radius: 4px;
   text-transform: uppercase;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: HeroAnimation 3s 0.6s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero a:hover {
+  background: #003854;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px)
 }
 
 @media (max-width: 640px) {
@@ -60,5 +99,43 @@ a {
 
   .Hero p {
     font-size: 24px;
+  }
+}
+
+
+
+.ValueContainer {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  height: 920px;
+  background: white;
+  padding: 150px;
+  justify-items: center;
+  /* align-items: center; */
+}
+
+.ValueContainer h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #003854;
+}
+
+.ValueContainer p {
+  color: #003854;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(35px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
   }
 }
