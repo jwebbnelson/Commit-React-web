@@ -40,24 +40,35 @@ a {
 .HeroImage {
   margin: 0;
   padding: 140px;
-  box-shadow: #003854;
 }
 
 .HeroImage img {
   display: block;
   width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.8s;
+  opacity: 0;
+  animation: HeroAnimation 2.5s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeroImage img:hover {
+  box-shadow: 0 15px 70px rgba(0, 0, 0, 0.1);
 }
 
 .Hero h1 {
   font-size: 60px;
   line-height: 1.2;
   color: #003854;
+  opacity: 0;
+  animation: HeroAnimation 2s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
   color: #003854;
+  opacity: 0;
   font-size: 30px;
   line-height: 1.5;
+  animation: HeroAnimation 2s 0.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a {
@@ -65,9 +76,18 @@ a {
   background-color: #00C3E1;
   color: #F0F5FA;
   font-weight: 700;
+  opacity: 0;
   padding: 16px 24px;
   border-radius: 4px;
   text-transform: uppercase;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation: HeroAnimation 3s 0.6s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero a:hover {
+  background: #003854;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px)
 }
 
 @media (max-width: 640px) {
@@ -81,5 +101,18 @@ a {
 
   .Hero p {
     font-size: 24px;
+  }
+}
+
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(35px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
   }
 }

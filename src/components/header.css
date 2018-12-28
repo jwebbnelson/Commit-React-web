@@ -17,20 +17,32 @@
 
 .HeaderGroup a {
     color: #003854;
+    transition: 0.3s;
+}
+
+.HeaderGroup a:hover {
+    color: #E2475E;
 }
 
 .HeaderGroup button {
     font-size: 18px;
     font-weight: 700;
-    background-color: #E2475E;
+    background-color:#003854;
     color: rgb(255, 255, 255);
     padding: 12px 24px;
     border-radius: 4px;
-    border-color: #E2475E;
-    text-transform: uppercase;
+    border-color: #003854;
     outline: none;
     cursor: pointer;
-  }
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderGroup button:hover {
+    background: #E2475E;
+    border-color: #E2475E;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px)
+}
 
 @media (max-width: 640px) {
     .Header {
