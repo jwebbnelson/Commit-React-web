@@ -13,8 +13,6 @@ a {
 }
 
 .Hero {
-  /* background: url('../images/hero_image.jpg');
- */
   background-color: #F0F5FA;
   height: 920px;
   background-size: cover;
@@ -102,6 +100,31 @@ a {
   .Hero p {
     font-size: 24px;
   }
+}
+
+
+
+.ValueContainer {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  height: 920px;
+  background: white;
+  padding: 150px;
+  justify-items: center;
+  /* align-items: center; */
+}
+
+.ValueContainer h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #003854;
+}
+
+.ValueContainer p {
+  color: #003854;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 

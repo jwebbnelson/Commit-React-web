@@ -19,6 +19,10 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      <div className="ValueContainer">
+       <h2>The Value of a Good Habit</h2>
+       <p>Establishing and keeping even just ONE good habit is life <br></br>changing. Change can be hard. You have to COMMIT!</p>
+      </div>
     </div>
   </Layout>
 )
