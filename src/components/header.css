@@ -1,0 +1,51 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 16px 0;
+    z-index: 100;
+    background: white;
+}
+
+.HeaderGroup {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.HeaderGroup a {
+    color: #003854;
+}
+
+.HeaderGroup button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #E2475E;
+    color: #F0F5FA;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border-color: #E2475E;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+  }
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 8px 0;
+    }
+
+    .HeaderGroup {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .HeaderGroup a {
+        font-size: 16px;
+    }
+
+    .Header a:nth-child(4) {
+        display: none;
+    }
+}
