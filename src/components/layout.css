@@ -28,6 +28,26 @@ a {
   text-align: left
 }
 
+.HeroContainer {
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.HeroImage {
+  margin: 0;
+  padding: 140px;
+  box-shadow: #003854;
+}
+
+.HeroImage img {
+  display: block;
+  width: 100%;
+}
+
 .Hero h1 {
   font-size: 60px;
   line-height: 1.2;
@@ -44,6 +64,7 @@ a {
   font-size: 18px;
   background-color: #00C3E1;
   color: #F0F5FA;
+  font-weight: 700;
   padding: 16px 24px;
   border-radius: 4px;
   text-transform: uppercase;
